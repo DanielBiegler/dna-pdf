@@ -9,4 +9,4 @@ fi
 # $3: Path to the DNA Data in fasta file format
 # $4: Fold width to properly fit the page
 # $5: Path to output content file
-sed -n "$1,$2p;$(($2+1))q" $3 | grep -v '^>' | tr -d '\nNn' | fold -w $4 | sed 's/^/<text:p text:style-name="P1">/' | sed 's/$/<\/text:p>/' > $5
+sed -n "$1,$2p;$(($2+1))q" $3 | grep -v '^>' | tr -d '\nNn' | fold -w $4 | sed 's/^/<text:p text:style-name="P2">/' | sed 's/$/<\/text:p>/' > $5
