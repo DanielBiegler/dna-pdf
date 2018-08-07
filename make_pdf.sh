@@ -22,4 +22,4 @@ echo "Remove content.xml"
 rm content.xml
 
 echo "Creating PDF. This can take a while"
-libreoffice --convert-to "pdf" $3
+time libreoffice --convert-to "pdf" $3
